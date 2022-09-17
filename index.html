@@ -13,7 +13,7 @@
             width: 45%;
             height: 80%;
             position: absolute;
-            bottom: 0;
+            bottom: 0;  
             right: 100px;
         }
         
@@ -24,6 +24,7 @@
             bottom: 0;
             transform: translateX(-50%);
             transition: bottom 1s, left 1s;
+            z-index: 1;
         }
         
         .images:hover .shape {
@@ -32,6 +33,7 @@
         
         .images:hover .girl {
             left: 45%;
+            z-index: 1;
         }
         
         @media only screen and (max-width: 1040px) {
@@ -62,6 +64,12 @@
         
         .intro {
             margin-top: 100px;
+            z-index: 2;
+            
+        }
+        .introsec{
+
+            z-index: 2;
         }
     </style>
 
@@ -83,7 +91,7 @@
                     <a class="mr-5 hover:text-slate-900 hover:cursor-pointer">Conatct</a>
 
                 </nav>
-                <button class="brand-b inline-flex items-center text-white bg-orange-400 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded-full text-base mt-4 md:mt-0"><a href="theshantanu.in" "CV">Download CV</a>
+                <button class="brand-b inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded-full text-base mt-4 md:mt-0"><a href="theshantanu.in/cv" "CV">Download CV</a>
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -116,8 +124,8 @@
         </section>
     </div>
     </div>
-
-    <section class=" intro text-gray-600 body-font">
+    <div class="introsec">
+    <section class=" intro z-auto text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
 
             <div class="text-center lg:w-2/3 w-full">
@@ -130,8 +138,9 @@
                 </div>
             </div>
         </div>
-    </section>
 
+    </section>
+</div>
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
